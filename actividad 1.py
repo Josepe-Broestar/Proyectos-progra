@@ -1,0 +1,5 @@
+frase = input("ingrese una frase u oracion: ")
+frase = frase.lower()
+print("cantidad de letras 'a': ", frase.count("a"))
+print("frase en minuscula: ", frase)
+print("frase con las 'e' reemplazadas: ", frase.replace("e", "3"))
