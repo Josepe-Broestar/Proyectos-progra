@@ -23,3 +23,4 @@ for caracter in mensaje:
 print("Mensaje traducido:", traduccion)
 # usar esto de ejemplo: H$l@ M*+D$
 # para no tener que escribirlo a mano :D
+# jarona
