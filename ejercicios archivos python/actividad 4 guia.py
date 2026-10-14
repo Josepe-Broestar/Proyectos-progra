@@ -5,6 +5,9 @@ with open ("estudiantes.txt", "a", encoding="utf-8") as estudiantes:
         estudiantes.write(nombreapellido + "-" + nota)
         estudiantes.write("\n")
         confirmacion= input("desea seguir escribiendo? (enter para si, n para no)")
-        if confirmacion.lower == "n":
+        if confirmacion == "n":
             break
+with open("estudiantes.txt", "r", encoding="utf-8") as estudianteslectura:
+    contenido = estudianteslectura.read()
+    print(contenido)
         
