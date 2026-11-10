@@ -53,9 +53,15 @@ def ProductoConMasIngresos(items, productos):
         precio = precios[id_producto]
         ventas_total[id_producto] = cantidad * precio
     idpro = max(ventas_total, key=ventas_total.get)
-
     return nombres[idpro]
 
 productinho = ProductoConMasIngresos("items.csv", "productos.csv")
 print(productinho)
-            
+#PRODUCTOCONMASINGRESOS LISTO
+
+def TotalVentasDelMes(mes, año, items, productos, ventas):
+    with open(ventas, "r") as ventas_archivo:
+        lector = csv.reader(ventas_archivo, delimiter=";")
+        for linea in lector:
+            num_boleta = linea[0]
+            fecha = linea
